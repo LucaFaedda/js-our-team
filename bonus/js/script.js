@@ -33,16 +33,19 @@ let team_array = [
 
 ]
 
-const listaTeam = document.querySelector('.lista-team')
+const listaTeam = document.getElementById('team')
 
 for(let i=0; i< team_array.length; i++){
 console.log(team_array[i])
     
     let team = team_array[i]
-    for(let key in team){
-        listaTeam.innerHTML += `<img src="../img/${team.image}">
-        <p class="text-white">${team.name}</p>
-        <p class="text-white">${team.role}</p>`
+    listaTeam.innerHTML += `<div class="card m-2 " style="width: 18rem;">
+  <img src="../img/${team.image}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Nome e Cognome : ${team.name}</p>
+    <p class="card-text">Ruolo: ${team.role}</p>
+  </div>
+</div>`
         
-    }
+
 }

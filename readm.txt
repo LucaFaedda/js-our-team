@@ -10,3 +10,8 @@ BONUS 2: Organizzare i singoli membri in card/schede
 1. creaimo un array di oggetti con le diverse informazioni
 2. tramite un for and for in stampiamo su console le informazioni
 3. sempre tramite i cicli stampiamo sul DOM
+
+bonus 2
+
+devo prenndere il primo oggetto dell'array, e stamparlo sulla prima card
+
