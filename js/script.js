@@ -40,6 +40,7 @@ console.log(team_array[i])
     
     let team = team_array[i]
     for(let key in team){
+        console.log(team[key])
         listaTeam.innerHTML += `<p class="text-white">${team[key]}</p>`
     }
 }
