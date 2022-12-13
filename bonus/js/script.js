@@ -40,6 +40,9 @@ console.log(team_array[i])
     
     let team = team_array[i]
     for(let key in team){
-        listaTeam.innerHTML += `<p class="text-white">${team[key]}</p>`
+        listaTeam.innerHTML += `<img src="../img/${team.image}">
+        <p class="text-white">${team.name}</p>
+        <p class="text-white">${team.role}</p>`
+        
     }
 }
