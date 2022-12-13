@@ -35,8 +35,11 @@ let team_array = [
 
 
 for(let i=0; i< team_array.length; i++){
+console.log(team_array[i])
 
     let team = team_array[i]
+
+
     for(let key in team){
         console.log(team[key])
     }
