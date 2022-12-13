@@ -1,5 +1,5 @@
 
-let team = [
+let team_array = [
     {
         name: "Wayne Barnett",
         role: "Founder & CEO",
@@ -32,3 +32,12 @@ let team = [
     }
 
 ]
+
+
+for(let i=0; i< team_array.length; i++){
+
+    let team = team_array[i]
+    for(let key in team){
+        console.log(team[key])
+    }
+}
