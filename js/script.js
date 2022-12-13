@@ -33,14 +33,15 @@ let team_array = [
 
 ]
 
+const listaTeam = document.querySelector('.lista-team')
 
 for(let i=0; i< team_array.length; i++){
 console.log(team_array[i])
-
+    
     let team = team_array[i]
-
-
     for(let key in team){
+        team = `<p class="text-white">${team[key]}</p>`
+        listaTeam.innerHTML += team
         console.log(team[key])
     }
 }
