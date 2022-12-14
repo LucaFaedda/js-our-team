@@ -40,12 +40,12 @@ console.log(team_array[i])
     
     let team = team_array[i]
     listaTeam.innerHTML += `<div class="card m-2 " style="width: 18rem;">
-  <img src="../img/${team.image}" class="card-img-top" alt="...">
+  <img src="./img/${team.image}" class="card-img-top" alt="immagine-team"> 
   <div class="card-body">
     <p class="card-text">Nome e Cognome : ${team.name}</p>
     <p class="card-text">Ruolo: ${team.role}</p>
   </div>
 </div>`
         
-
+// nell'immagine non serve il puntino in più perchè noi lo inseriamo direttamente in HTML viene letto lì
 }
