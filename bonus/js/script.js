@@ -42,10 +42,41 @@ console.log(team_array[i])
     listaTeam.innerHTML += `<div class="card m-2 " style="width: 18rem;">
   <img src="./img/${team.image}" class="card-img-top" alt="immagine-team"> 
   <div class="card-body">
-    <p class="card-text">Nome e Cognome : ${team.name}</p>
+    <h3 class="card-text"> ${team.name}</h3>
     <p class="card-text">Ruolo: ${team.role}</p>
   </div>
 </div>`
         
 // nell'immagine non serve il puntino in più perchè noi lo inseriamo direttamente in HTML viene letto lì
 }
+
+
+
+
+/* METODO FABRIZIO CON FUNZIONE
+
+Definisco una funzione
+
+function drawTeamMember(person)
+{
+    const listaTeam = document.getElementById('team')
+    let member_card = ` 
+    <div class="team-card">
+    <div class = "card-image">
+    <img class="img-fluid" src="./img/${team.image}" alt="${person-name}"
+    </div>
+    <div class = "card-text">
+    <p class="card-text">Nome e Cognome : ${team.name}</p>
+    <p class="card-text">Ruolo: ${team.role}</p>
+    </div>
+    </div>`
+
+}
+
+for(let i=0; i< team_array.length; i++){
+console.log(team_array[i])
+    
+    let team = team_array[i]
+    drawTeamMember(team)
+
+}*/
